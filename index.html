@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://js.arcgis.com/4.29/esri/themes/light/main.css" />
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+    
+    <script src="https://js.arcgis.com/4.29/"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <h1>Testing Arcgis API 4.x</h1>
+    </header>
+
+    <div id="mapContainer">
+      <div id="viewDiv"></div>
+      
+      <div id="controls" class="card">
+        <form id="form1">
+          <select id="fieldSelect">
+            <option value="" disabled selected hidden>Select a field</option>
+          </select>
+          <br />
+          <input autocomplete="off" type="text" id="filterInput" placeholder="Enter the value to filter" list="myDataList" />
+          <datalist id="myDataList"></datalist>
+          <button type="submit">Search</button>
+        </form>
+      </div>
+      
+      <div id="controlsContainer">
+        <div id="controls2" class="card">
+          <table id="features-table" class="table">
+            <thead></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <div id="controls3" class="card">
+          <div id="someChart" style="width: 400px; height: 200px"></div>
+        </div>
+        <div id="controls4" class="card">
+          <div id="pieChart" style="width: 400px; height: 200px"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer">
+      <p>Developed with ArcGIS API for JavaScript</p>
+    </div>
+  </body>
+</html>
